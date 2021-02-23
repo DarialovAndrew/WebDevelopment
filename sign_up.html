@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up Page</title>
+</head>
+<body>
+<header>
+    <nav><!--в хедере будет pop-up меню, без css не знаю как сделать--></nav>
+</header>
+<h2>Register Page</h2>
+<p>Please fill this form to create account</p>
+<hr/>
+<form action="" method="post">
+    <table>
+        <tr>
+            <td><label for="">Email address</label></td>
+            <td>
+                <input
+                        type="email"
+                        name="email"
+                        maxlength="120"
+                        placeholder="Email address"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        required
+                />
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="">Password</label></td>
+            <td>
+                <input
+                        type="password"
+                        name="password"
+                        maxlength="256"
+                        placeholder="Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required
+                />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Password Retype</label></td>
+            <td>
+                <input
+                        type="password"
+                        name="password2"
+                        maxlength="256"
+                        placeholder="Password Retype"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase
+      letter, and at least 8 or more characters"
+                        required
+                />
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Register"/>
+
+    <h4>
+        Already have an account? <a href="login.html"><b>Login</b></a>
+    </h4>
+</form>
+
+<h3>Go to Main page</h3>
+<button type="button" onclick="location.href='main.html';">
+    Main Page
+</button>
+</body>
+</html>
