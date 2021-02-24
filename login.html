@@ -8,7 +8,8 @@
 </head>
 <body>
 <h2>Login Page</h2>
-<p>Please fill this form to create account</p>
+<p>Please fill this form to login</p>
+<hr/>
 <form action="" method="post">
     <table>
         <tr>
@@ -47,12 +48,19 @@
                     <option value="USA">USA</option>
                     <option value="UK">United Kingdom</option>
                     <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
                 </select>
             </td>
         </tr>
     </table>
+    <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>
     <input type="submit" value="Register"/>
-
+    <p>OR</p>
+    <div>
+        <input type="button" value="Facebook" onclick="location.href='https:facebook.com/';">
+        <input type="button" value="Google" onclick="location.href='https:google.com/';">
+    </div>
     <h4>
         Don`t have an account? <a href="sign_up.html"><b>Sign Up</b></a>
     </h4>
