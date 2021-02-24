@@ -1,271 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
-<style>
-    a {
-        text-decoration: none;
-    }
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trading Platform</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/dashboard.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__left">
+                <div class="header__logo">
+                    <img src="img/zador-logo.png" />
+                </div>
+                <div class="checkbox-dark">
+                    <div class="checkbox-item">
+                        <img src="img/night-mode-dark.svg"/>
+                    </div>
+                    <div class="checkbox-item">
+                        <img src="img/sun.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="header__right">
+                <!-- <div class="complete_registration">
+                    <button>
+                        Complete registration
+                    </button>
+                </div> -->
+                <div class="live-outer">
+                    <div class="live">
+                        live
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard__panel">
+            <div class="tab__panel">
+                <div class="tabs">
+                    <div class="tab trade"> 
+                        <img src="img/line-chart.svg" />
+                        <span>Trade</span>
+                    </div>
+                    <div class="tab discover">
+                        <img src="img/compass.svg" />
+                        <span>Discover</span>
+                    </div>
+                    <div class="tab charts">
+                        <img src="img/bar-chart.svg"
+                        <span>Charts</span>
+                    </div>
+                    <div class="tab portfolio">
+                        <img src="img/office-briefcase.svg" />
+                        <span>Portfolio</span>
+                    </div>
+                    <div class="tab reports">
+                        <img src="img/article.svg" />
+                        <span>Reports</span>
+                    </div>
+                </div>
+                <div class="  settings">
 
-    section {
-        width: 100%;
-        display: table;
-    }
+                    <div class="tab">
+                        <img src="img/settings.svg" />
+                        <span>Settings</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__content">
+                <div class="main" style="display: table;">
+    				<div style="text-align:center; width: 100%">
+        				<table style="margin-right: 10%; margin-left: 10%">
+            				<tr>
+                				<th>Market</th>
+                				<th>Change</th>
+                				<th>Sell</th>
+                				<th>Buy</th>
+                				<th>Low</th>
+                				<th>High</th>
+            				</tr>
+				
+            				<tr>
+                				<th>Tesla</th>
+                				<th><span style="color: #FF0000; ">-4,05%</span></th>
+                				<th>683,97&#9650; <button>Sell</button></th>
+                				<th>706,51&#9660; <button>Buy</button></th>
+                				<th>618,83</th>
+                				<th>716,05</th>
+            				</tr>
+				
+            				<tr>
+                				<th>Alibaba</th>
+                				<th><span style="color: #0000FF; ">+0,15%</span></th>
+                				<th>254,20&#9660; <button>Sell</button></th>
+                				<th>261,84&#9650; <button>Buy</button></th>
+                				<th>240,90</th>
+                				<th>273,54</th>
+            				</tr>
+				
+            				<tr>
+                				<th>ATB</th>
+                				<th><span style="color: #FF0000; ">-0,86%</span></th>
+                				<th>3856,82&#9650; <button>Sell</button></th>
+                				<th>3749,10&#9660; <button>Buy</button></th>
+                				<th>3749,10</th>
+                				<th>3902,12</th>
+            				</tr>
+				
+            				<tr>
+                				<th>OLX</th>
+                				<th><span style="color: #0000FF; ">+5,36%</span></th>
+                				<th>589,99&#9650; <button>Sell</button></th>
+                				<th>694,24&#9650; <button>Buy</button></th>
+                				<th>531,10</th>
+                				<th>700,58</th>
+            				</tr>
+				
+            				<tr>
+                				<th>Prom</th>
+                				<th><span style="color: #0000FF; ">+0,06%</span></th>
+                				<th>8483,53&#9650; <button>Sell</button></th>
+                				<th>8567,06&#9650; <button>Buy</button></th>
+                				<th>8472,63</th>
+                				<th>8569,06</th>
+            				</tr>
+				
+            				<tr>
+                				<th>WIX</th>
+                				<th><span style="color: #FF0000; ">-3,95%</span></th>
+                				<th>65.09&#9660; <button>Sell</button></th>
+                				<th>80.17&#9660; <button>Buy</button></th>
+                				<th>60,23</th>
+                				<th>92,88</th>
+            				</tr>
+				
+            				<tr>
+                				<th style="border-bottom: 1px solid black;">Amazon</th>
+                				<th><span style="color: #0000FF; ">+10,8%</span></th>
+                				<th>65.09&#9650; <button>Sell</button></th>
+                				<th>80.17&#9650; <button>Buy</button></th>
+                				<th>60,23</th>
+                				<th>92,88</th>
+            				</tr>
+				
+            				<tr>
+                				<th>Google</th>
+                				<th><span style="color: #0000FF; ">+11%</span></th>
+                				<th>9365,77&#9650; <button>Sell</button></th>
+                				<th>9485,34&#9660; <button>Buy</button></th>
+                				<th>825,11</th>
+                				<th>10587,33</th>
+            				</tr>
+				
+            				<tr>
+                				<th>IBM</th>
+                				<th><span style="color: #FF0000; ">-17,2%</span></th>
+                				<th>1589,38&#9660; <button>Sell</button></th>
+                				<th>2478,28&#9660; <button>Buy</button></th>
+                				<th>1434,02</th>
+                				<th>2597,68</th>
+            				</tr>
+				
+            				<tr>
+                				<th>HP</th>
+                				<th><span style="color: #FF0000; ">-2,75%</span></th>
+                				<th>168,25&#9650; <button>Sell</button></th>
+                				<th>198,08&#9650; <button>Buy</button></th>
+                				<th>165,32</th>
+                				<th>205.81</th>
+            				</tr>
+				
+            				<tr>
+                				<th>DELL</th>
+                				<th><span style="color: #0000FF; ">+0,78%</span></th>
+                				<th>986,57&#9660; <button>Sell</button></th>
+                				<th>1087,22&#9660; <button>Buy</button></th>
+                				<th>950,08</th>
+                				<th>1091,68</th>
+            				</tr>
+				
+            				<tr>
+                				<th>Samsung</th>
+                				<th><span style="color: #0000FF; ">+2,28%</span></th>
+                				<th>8867,55&#9650; <button>Sell</button></th>
+                				<th>8975,12&#9660; <button>Buy</button></th>
+                				<th>8752,36</th>
+                				<th>9102,50</th>
+            				</tr>
+				
+        				</table>
+    				</div>
+				</div>
+            </div>
+        </div>
 
-    table {
-        border-collapse: collapse;
-        width: 80%;
-    }
-
-    td,
-    th {
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        text-align: left;
-        padding: 8px;
-    }
-</style>
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-<div class="header">
-    <nav>
-        <table>
-            <tr>
-                <td>
-                    <figure>
-                        <a href="main.html"> <img src="img/logo.png" alt="Logo"/></a>
-                    </figure>
-                </td>
-                <td><b>Products</b></td>
-                <td>
-                    <b>Markets</b>
-                </td>
-                <td>
-                    <b>For traders</b>
-                </td>
-                <td>
-                    <b> Learn to trade</b>
-                </td>
-                <td>
-                    <b>About</b>
-                </td>
-                <td>
-
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <ul>
-                        <li><a href="#">Mobile Apps</a></li>
-                        <li><a href="#">Web Platform</a></li>
-                        <li><a href="#">Investmate</a></li>
-                        <li><a href="#">Spread betting</a></li>
-                        <li><a href="#">Tradingview</a></li>
-                    </ul>
-                </td>
-
-                <td>
-                    <ul>
-                        <li><a href="#">Indices</a></li>
-                        <li><a href="#">Forex</a></li>
-                        <li><a href="#">Commodities</a></li>
-                        <li><a href="#">Cryptocurrencies</a></li>
-                        <li><a href="#">Shares</a></li>
-                        <li><a href="#">Changes and fees</a></li>
-                        <li><a href="#">Upcoming IPOs</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="#">News and Features</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Webinars</a></li>
-                        <li><a href="#">CFD Account types</a></li>
-                        <li><a href="#">Professional clients</a></li>
-                        <li><a href="#">Institutional</a></li>
-                        <li><a href="#">Upcoming IPOs</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="#">The basics of trading</a></li>
-                        <li><a href="#">Spread betting guide</a></li>
-                        <li><a href="#">CFD trading guide</a></li>
-                        <li><a href="#">CFD Account types</a></li>
-                        <li><a href="#">Commodities trading guide</a></li>
-                        <li><a href="#">Forex trading guide</a></li>
-                        <li><a href="#">Crypto trading guide</a></li>
-                        <li><a href="#">Indices trading guide</a></li>
-                        <li><a href="#">ETF trading guide</a></li>
-                        <li><a href="#">Trading strategies guide</a></li>
-                        <li><a href="#">Trading psychology guide</a></li>
-                        <li><a href="#">Glossary</a></li>
-                        <li><a href="#">Courses</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="#">Why us ?</a></li>
-                        <li><a href="#">Our offices</a></li>
-                        <li><a href="#">Is it save ?</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Compliance</a></li>
-                        <li><a href="#">Affiliate Programme</a></li>
-                        <li><a href="#">Referral Programme</a></li>
-                        <li><a href="#">Golden Referral Programme</a></li>
-                        <li><a href="#">In the press</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <div id="loginButton">
-                                <a href="login.html">Login</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div id="singUpButton">
-                                <a href="sign_up.html">Sign Up</a>
-                            </div>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </nav>
-</div>
-
-
-<div class="main">
-    <div style="text-align:center; width: 100%">
-        <table style="margin-right: 10%; margin-left: 10%">
-            <tr>
-                <th>Market</th>
-                <th>Change</th>
-                <th>Sell</th>
-                <th>Buy</th>
-                <th>Low</th>
-                <th>High</th>
-            </tr>
-
-            <tr>
-                <th>Tesla</th>
-                <th><span style="color: #FF0000; ">-4,05%</span></th>
-                <th>683,97&#9650; <button>Sell</button></th>
-                <th>706,51&#9660; <button>Buy</button></th>
-                <th>618,83</th>
-                <th>716,05</th>
-            </tr>
-
-            <tr>
-                <th>Alibaba</th>
-                <th><span style="color: #0000FF; ">+0,15%</span></th>
-                <th>254,20&#9660; <button>Sell</button></th>
-                <th>261,84&#9650; <button>Buy</button></th>
-                <th>240,90</th>
-                <th>273,54</th>
-            </tr>
-
-            <tr>
-                <th>ATB</th>
-                <th><span style="color: #FF0000; ">-0,86%</span></th>
-                <th>3856,82&#9650; <button>Sell</button></th>
-                <th>3749,10&#9660; <button>Buy</button></th>
-                <th>3749,10</th>
-                <th>3902,12</th>
-            </tr>
-
-            <tr>
-                <th>OLX</th>
-                <th><span style="color: #0000FF; ">+5,36%</span></th>
-                <th>589,99&#9650; <button>Sell</button></th>
-                <th>694,24&#9650; <button>Buy</button></th>
-                <th>531,10</th>
-                <th>700,58</th>
-            </tr>
-
-            <tr>
-                <th>Prom</th>
-                <th><span style="color: #0000FF; ">+0,06%</span></th>
-                <th>8483,53&#9650; <button>Sell</button></th>
-                <th>8567,06&#9650; <button>Buy</button></th>
-                <th>8472,63</th>
-                <th>8569,06</th>
-            </tr>
-
-            <tr>
-                <th>WIX</th>
-                <th><span style="color: #FF0000; ">-3,95%</span></th>
-                <th>65.09&#9660; <button>Sell</button></th>
-                <th>80.17&#9660; <button>Buy</button></th>
-                <th>60,23</th>
-                <th>92,88</th>
-            </tr>
-
-            <tr>
-                <th style="border-bottom: 1px solid black;">Amazon</th>
-                <th><span style="color: #0000FF; ">+10,8%</span></th>
-                <th>65.09&#9650; <button>Sell</button></th>
-                <th>80.17&#9650; <button>Buy</button></th>
-                <th>60,23</th>
-                <th>92,88</th>
-            </tr>
-
-            <tr>
-                <th>Google</th>
-                <th><span style="color: #0000FF; ">+11%</span></th>
-                <th>9365,77&#9650; <button>Sell</button></th>
-                <th>9485,34&#9660; <button>Buy</button></th>
-                <th>825,11</th>
-                <th>10587,33</th>
-            </tr>
-
-            <tr>
-                <th>IBM</th>
-                <th><span style="color: #FF0000; ">-17,2%</span></th>
-                <th>1589,38&#9660; <button>Sell</button></th>
-                <th>2478,28&#9660; <button>Buy</button></th>
-                <th>1434,02</th>
-                <th>2597,68</th>
-            </tr>
-
-            <tr>
-                <th>HP</th>
-                <th><span style="color: #FF0000; ">-2,75%</span></th>
-                <th>168,25&#9650; <button>Sell</button></th>
-                <th>198,08&#9650; <button>Buy</button></th>
-                <th>165,32</th>
-                <th>205.81</th>
-            </tr>
-
-            <tr>
-                <th>DELL</th>
-                <th><span style="color: #0000FF; ">+0,78%</span></th>
-                <th>986,57&#9660; <button>Sell</button></th>
-                <th>1087,22&#9660; <button>Buy</button></th>
-                <th>950,08</th>
-                <th>1091,68</th>
-            </tr>
-
-            <tr>
-                <th>Samsung</th>
-                <th><span style="color: #0000FF; ">+2,28%</span></th>
-                <th>8867,55&#9650; <button>Sell</button></th>
-                <th>8975,12&#9660; <button>Buy</button></th>
-                <th>8752,36</th>
-                <th>9102,50</th>
-            </tr>
-
-        </table>
-    </div>
-</div>
-
-
-</body>
+    </body>
 </html>
