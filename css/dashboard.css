@@ -103,26 +103,16 @@ img {
     width: 80px;
 }
 
-.live {
+.live a {
     text-transform: uppercase;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     background-color: black;
     color: white;
-    width: 31px;
     height: 16px;
     text-align: center;
     position: relative;
-}
-
-.live::after {
-    position: absolute;
-    font-family: 'icomoon';
-    content: "\f105";
-    left: 40px;
-    color: #000;
-    transform: rotate(0.25turn);
 }
 
  /* menu panel  */
