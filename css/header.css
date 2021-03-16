@@ -59,12 +59,13 @@ ul.top_menu {
 
 .menu {
     border: 0;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     width: 100%;
     background-color: white;
     top: 0;
     z-index: 9;
+    margin-bottom: 40px;
 }
 
 .menu a {
