@@ -4,70 +4,136 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/sign_up.css"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Login Page</title>
 </head>
 <body>
-<h2>Login Page</h2>
-<p>Please fill this form to login</p>
-<hr/>
-<form action="" method="post">
-    <table>
-        <tr>
-            <td><label for="">Email address</label></td>
-            <td>
-                <input
-                        type="email"
-                        name="email"
-                        maxlength="120"
-                        placeholder="Email address"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        required
-                />
-            </td>
-        </tr>
+<div class="menu">
+    <ul class="top_menu">
+        <li class="logo"><a href="home.html">Zador.com</a></li>
+        <li class="sub_header">
+            <a href="#">Products</a>
+            <ul class="sub_menu">
+                <li><a href="#">Mobile Apps</a></li>
+                <li><a href="#">Web Platform</a></li>
+                <li><a href="#">Investmate</a></li>
+                <li><a href="#">Spread betting</a></li>
+                <li><a href="#">Tradingview</a></li>
+            </ul>
+        </li>
+        <li class="sub_header">
+            <a href="#">Markets</a>
+            <ul class="sub_menu">
+                <li><a href="#">Indices</a></li>
+                <li><a href="#">Forex</a></li>
+                <li><a href="#">Commodities</a></li>
+                <li><a href="#">Cryptocurrencies</a></li>
+                <li><a href="#">Shares</a></li>
+                <li><a href="#">Changes and fees</a></li>
+                <li><a href="#">Upcoming IPOs</a></li>
+            </ul>
+        </li>
+        <li class="sub_header">
+            <a href="#">For traders</a>
+            <ul class="sub_menu">
+                <li><a href="#">News and Features</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Webinars</a></li>
+                <li><a href="#">CFD Account types</a></li>
+                <li><a href="#">Professional clients</a></li>
+                <li><a href="#">Institutional</a></li>
+                <li><a href="#">Upcoming IPOs</a></li>
+            </ul>
+        </li>
+        <li class="sub_header">
+            <a href="#">Learn to trade</a>
+            <ul class="sub_menu">
+                <li><a href="#">The basics of trading</a></li>
+                <li><a href="#">Spread betting guide</a></li>
+                <li><a href="#">CFD trading guide</a></li>
+                <li><a href="#">CFD Account types</a></li>
+                <li><a href="#">Commodities trading guide</a></li>
+                <li><a href="#">Forex trading guide</a></li>
+                <li><a href="#">Crypto trading guide</a></li>
+                <li><a href="#">Indices trading guide</a></li>
+                <li><a href="#">ETF trading guide</a></li>
+                <li><a href="#">Trading strategies guide</a></li>
+                <li><a href="#">Trading psychology guide</a></li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+        </li>
+        <li class="sub_header">
+            <a href="#">About</a>
+            <ul class="sub_menu">
+                <li><a href="#">Why us ?</a></li>
+                <li><a href="#">Our offices</a></li>
+                <li><a href="#">Is it save ?</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Compliance</a></li>
+                <li><a href="#">Affiliate Programme</a></li>
+                <li><a href="#">Referral Programme</a></li>
+                <li><a href="#">Golden Referral Programme</a></li>
+                <li><a href="#">In the press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </li>
+        <li class="header_button"><a href="login.html">Login</a></li>
+        <li class="header_button"><a href="sign_up.html">Sign Up</a></li>
+    </ul>
+</div>
+<div id="login-box">
+    <div class="left">
+        <h1>Login</h1>
+        <form action="" method="post">
+            <i class="fa fa-envelope"></i>
+            <input maxlength="120"
+                   placeholder="Email address"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                   required type="text" name="email" placeholder="E-mail"/>
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" placeholder="Password"
+                   maxlength="256"
 
-        <tr>
-            <td><label for="">Password</label></td>
-            <td>
-                <input
-                        type="password"
-                        name="password"
-                        maxlength="256"
-                        placeholder="Password"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-                        required
-                />
-            </td>
-        </tr>
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   title="Must contain at least one number and one uppercase and lowercase
+      letter, and at least 8 or more characters"
+                   required/>
+            <i class="fa fa-lock"></i>
+            <input
+                    maxlength="256"
+                    placeholder="Password Retype"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase
+      letter, and at least 8 or more characters"
+                    required type="password" name="password2" placeholder="Retype password"/>
+            <i class="fa fa-globe"></i>
+            <select class="country_selector" name="country_name" id="" aria-placeholder="Country">
+                <option value="USA">USA</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+            </select>
+            <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>
 
-        <tr>
-            <td><label for="">Country name</label></td>
-            <td>
-                <select name="country_name" id="" aria-placeholder="Country">
-                    <option value="USA">USA</option>
-                    <option value="UK">United Kingdom</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Australia">Australia</option>
-                    <option value="Germany">Germany</option>
-                </select>
-            </td>
-        </tr>
-    </table>
-    <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>
-    <input type="submit" value="Login"/>
-    <p>OR</p>
-    <div>
-        <input type="button" value="Facebook" onclick="location.href='https:facebook.com/';">
-        <input type="button" value="Google" onclick="location.href='https:google.com/';">
+            <input type="submit" name="signup_submit" value="Login me"/>
+        </form>
     </div>
-    <h4>
-        Don`t have an account? <a href="sign_up.html"><b>Sign Up</b></a>
-    </h4>
-</form>
-<h3>Go to Main page</h3>
-<button type="button" onclick="location.href='main.html';">
-    Main Page
-</button>
+
+    <div class="right">
+        <span class="loginwith">Login with<br/>social network</span>
+
+        <button class="social-signin facebook" onclick="window.location.href='https://www.facebook.com/'">Log in with Facebook</button>
+        <button class="social-signin twitter" onclick="window.location.href='https://www.twitter.com/'" >Log in with Twitter</button>
+        <button class="social-signin google" onclick="window.location.href='https://www.google.com/'">Log in with Google</button>
+    </div>
+    <div class="or">OR</div>
+</div>
 </body>
 </html>
