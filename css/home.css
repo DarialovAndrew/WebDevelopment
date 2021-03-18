@@ -7,31 +7,14 @@ body {
     padding: 0;
 }
 
-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
 a {
     text-decoration: none;
-}
-
-button:hover {
-    color: #FF0000;
-}
-
-p {
-    font-family: "Times New Roman", Times, serif;
 }
 
 section {
     width: 100%;
     display: table;
+    min-height: 30%;
 }
 
 .row {
@@ -40,13 +23,27 @@ section {
     display: table-row;
 }
 
+.crypto-image{
+    background-image: url('../img/header.png');
+}
+
 .col-two {
     width: 50%;
     display: table-cell;
 }
 
+.left{
+    padding-left:10%;
+}
+
+.right{
+    text-align:center;
+    vertical-align: middle;
+}
+
 .col-three {
     width: 33%;
+    height: 100%;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -60,6 +57,7 @@ section {
 
 .box-form {
     width: 70%;
+    height: 100%;
     border-style: solid;
     margin: 10%;
     padding: 10px;
@@ -77,11 +75,73 @@ th {
     border-top: 1px solid black;
     text-align: left;
     padding: 8px;
+    font-size: 18px;
 }
 
-p::first-letter {
-    color: #ff0000;
-    font-size: xx-large;
+.top-label{
+    color: white;
+}
+
+.label-large{
+    font-size: 40px;
+}
+
+.label-medium{
+    font-size: 32px;
+}
+
+.label-small{
+    font-size: 24px;
+}
+
+.button-table {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.button-top{
+    background-color: #343A40;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.rainbow:hover{
+    background-image: linear-gradient(
+            to right,
+            #E7484F,
+            #E7484F 16.65%,
+            #F68B1D 16.65%,
+            #F68B1D 33.3%,
+            #FCED00 33.3%,
+            #FCED00 49.95%,
+            #009E4F 49.95%,
+            #009E4F 66.6%,
+            #00AAC3 66.6%,
+            #00AAC3 83.25%,
+            #732982 83.25%,
+            #732982 100%,
+            #E7484F 100%
+    );
+    animation:slidebg 3s linear infinite;
+}
+
+.ripple:hover{
+    background-color: #3b833c;
+}
+
+@keyframes slidebg {
+    to {
+        background-position:20vw;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
