@@ -22,6 +22,11 @@ section {
     height: 100%;
     display: table-row;
 }
+.row_img {
+    flex-wrap: wrap;
+    height: 100%;
+    display: flex;
+}
 
 .crypto-image{
     background-image: url('../img/header.png');
@@ -50,7 +55,7 @@ section {
 }
 
 .col-seven {
-    width: 14.28%;
+
     display: table-cell;
     padding: 8px;
 }
