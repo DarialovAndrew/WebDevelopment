@@ -23,6 +23,7 @@ section {
     display: table-row;
 }
 .row_img {
+    justify-content: center;
     flex-wrap: wrap;
     height: 100%;
     display: flex;

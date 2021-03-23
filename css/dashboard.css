@@ -170,7 +170,7 @@ img {
     font-family: 'Roboto', sans-serif;
  }
 
- @media only screen and (max-width: 1024px), screen and (max-height: 560px) {
+ @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .dashboard__panel {
         display: flex;
         flex:1 0 auto;
@@ -202,8 +202,13 @@ img {
      display: flex;
      flex-direction: column;
  }
-
+.dashboard__graph
+{
+    overflow: hidden;
+    width: 100%;
+}
  .dashboard__header {
+
      height: 45px;
  }
 
