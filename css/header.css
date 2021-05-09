@@ -39,8 +39,13 @@ li.logo {
     padding: 0;
     margin: 0;
     position: fixed;
+    lex-flow: row wrap;
+    justify-content: space-around;
 }
+.top_menu
+{
 
+}
 ul.sub_menu {
     text-align: center;
     list-style: none;
@@ -64,7 +69,7 @@ ul.top_menu {
     width: 100%;
     background-color: white;
     top: 0;
-    z-index: 9;
+    z-index: 6;
     margin-bottom: 40px;
 }
 
@@ -94,12 +99,12 @@ ul.top_menu {
 }
 
 .menu ul {
-    z-index: 9;
+    z-index: 6;
     background: white;
 }
 
 .menu .sub_menu {
-    z-index: 9;
+    z-index: 6;
     display: none;
     background: white;
 }
@@ -109,7 +114,7 @@ ul.top_menu > li.sub_header:hover {
 }
 
 .sub_menu > li:hover {
-    z-index: 9;
+    z-index: 6;
     font-weight: 800;
     background-color: rgb(192, 192, 192);
 }
@@ -121,7 +126,7 @@ ul.top_menu > li.sub_header:hover {
 }
 
 .menu:hover {
-    z-index: 9;
+    z-index: 6;
     border-bottom-style: solid;
     border: black;
 }

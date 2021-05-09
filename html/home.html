@@ -10,12 +10,18 @@
     <link rel="stylesheet" href="../css/fonts.css"/>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/side_nav_header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
 <div class="menu">
     <ul class="top_menu">
+        <button
+                class="openbtn" onclick="openNav()">☰ Toggle Sidepanel
+        </button>
         <li class="logo"><a href="home.html">Zador.com</a></li>
         <li class="sub_header">
             <a href="#">Products</a>
@@ -91,6 +97,64 @@
     </ul>
 </div>
 
+<div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <button class="dropdown-btn">Products
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Mobile Apps</a>
+        <a href="#">Web Platform</a>
+        <a href="#">Investmate</a>
+        <a href="#">Spread betting</a>
+        <a href="#">Tradingview</a>
+    </div>
+    <button class="dropdown-btn">Markets
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Indices</a>
+        <a href="#">Forex</a>
+        <a href="#">Commodities</a>
+        <a href="#">Cryptocurrencies</a>
+        <a href="#">Shares</a></li>
+        <a href="#">Changes and fees</a>
+        <a href="#">Upcoming IPOs</a>
+    </div>
+    <button class="dropdown-btn">For traders
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">News and Features</a>
+        <a href="#">TV</a>
+        <a href="#">Webinars</a>
+        <a href="#">CFD Account types</a>
+        <a href="#">Professional clients</a>
+        <a href="#">Institutional</a>
+        <a href="#">Upcoming IPOs</a>
+    </div>
+    <button class="dropdown-btn">Learn to trade
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Why us ?</a>
+        <a href="#">Our offices</a>
+        <a href="#">Is it save ?</a>
+        <a href="#">FAQ</a>
+        <a href="#">Compliance</a>
+        <a href="#">Affiliate Program</a>
+        <a href="#">Referral Program</a>
+        <a href="#">Golden Referral Program</a>
+        <a href="#">In the press</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <button class="dropdown-btn">About
+    </button>
+
+
+</div>
 <section>
     <div class="row crypto-image">
         <div class="col-two left">
@@ -250,5 +314,5 @@
         </div>
     </div>
 </section>
-
+<script src="../scripts/dropdown.js"></script>
 </body>

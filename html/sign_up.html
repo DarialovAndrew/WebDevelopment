@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="../css/sign_up.css"/>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/side_nav_header.css">
     <title>Sign Up Page</title>
+
 </head>
 <body>
 <div class="menu">
     <ul class="top_menu">
+        <button
+                class="openbtn" onclick="openNav()">☰ Toggle Sidepanel
+        </button>
         <li class="logo"><a href="home.html">Zador.com</a></li>
         <li class="sub_header">
             <a href="#">Products</a>
@@ -82,6 +87,7 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </li>
+
         <li class="header_button"><a href="login.html">Login</a></li>
         <li class="header_button"><a href="sign_up.html">Sign Up</a></li>
     </ul>
@@ -89,32 +95,45 @@
 <div id="login-box">
     <div class="left">
         <h1>Sign up</h1>
-        <form action="" method="post">
-            <i class="fa fa-user"></i>
-            <input type="text" name="login" placeholder="Username" maxlength="120" required/>
-            <i class="fa fa-envelope"></i>
-            <input maxlength="120"
-                   placeholder="Email address"
-                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                   required type="text" name="email" placeholder="E-mail"/>
-            <i class="fa fa-lock"></i>
-            <input type="password" name="password" placeholder="Password"
-                   maxlength="256"
+        <form id="sign_up_form" class="sign_up_form" name="sign_up_form" action="" method="post">
+            <div class="form-control">
+                <label for="login">Login</label>
+                <input id="login" type="text" placeholder="Username"/>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email" >Email</label>
+                <input
+                       type="text" placeholder="E-mail" id="email"/>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password" >Password</label>
 
-                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                   title="Must contain at least one number and one uppercase and lowercase
-      letter, and at least 8 or more characters"
-                   required/>
-            <i class="fa fa-lock"></i>
-            <input
-                    maxlength="256"
-                    placeholder="Password Retype"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number and one uppercase and lowercase
-      letter, and at least 8 or more characters"
-                    required type="password" name="password2" placeholder="Retype password"/>
-            <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>
+                <input id="password" type="password"  placeholder="Password"
+                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+                <i class="fa fa-eye" id="togglePsw" onclick="switch_visibility()"></i>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
 
+            <div class="form-control ">
+                <label for="password2">Password Retype</label>
+                <input  id="password2" type="password"  placeholder="Password"
+
+                       title="Must contain at least one number and one uppercase and lowercase
+      letter, and at least 8 or more characters"/>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+<!--            <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>-->
+<!--            <button>Sign me up</button>-->
             <input type="submit" name="signup_submit" value="Sign me up"/>
         </form>
     </div>
@@ -133,11 +152,72 @@
         </button>
     </div>
 
-    <div class="or">OR</div>
+<!--    <div class="or">OR</div>-->
 
 </div>
 <p class="down_part">
     Already have an account? <a class="down_part" href="login.html"><b>Login</b></a>
 </p>
+<div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <button class="dropdown-btn">Products
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Mobile Apps</a>
+        <a href="#">Web Platform</a>
+        <a href="#">Investmate</a>
+        <a href="#">Spread betting</a>
+        <a href="#">Tradingview</a>
+    </div>
+    <button class="dropdown-btn">Markets
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Indices</a>
+        <a href="#">Forex</a>
+        <a href="#">Commodities</a>
+        <a href="#">Cryptocurrencies</a>
+        <a href="#">Shares</a></li>
+        <a href="#">Changes and fees</a>
+        <a href="#">Upcoming IPOs</a>
+    </div>
+    <button class="dropdown-btn">For traders
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">News and Features</a>
+        <a href="#">TV</a>
+        <a href="#">Webinars</a>
+        <a href="#">CFD Account types</a>
+        <a href="#">Professional clients</a>
+        <a href="#">Institutional</a>
+        <a href="#">Upcoming IPOs</a>
+    </div>
+    <button class="dropdown-btn">Learn to trade
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Why us ?</a>
+        <a href="#">Our offices</a>
+        <a href="#">Is it save ?</a>
+        <a href="#">FAQ</a>
+        <a href="#">Compliance</a>
+        <a href="#">Affiliate Program</a>
+        <a href="#">Referral Program</a>
+        <a href="#">Golden Referral Program</a>
+        <a href="#">In the press</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <button class="dropdown-btn">About
+    </button>
+
+
+</div>
+<script src="../scripts/form_validation_sign_up.js"></script>
+<script src="../scripts/toggle_psw_visibility.js"></script>
+<script src="../scripts/dropdown.js"></script>
 </body>
 </html>
