@@ -163,7 +163,8 @@
             <a class="button-top rainbow" href="main.html">Start Trading Now</a>
         </div>
         <div class="col-two right">
-            <img src="../img/bit-info.png">
+            <p class="top-label label-medium">Dogecoin</p>
+            <p class="top-label label-medium">$<span id="doge_price"></span></p>>
         </div>
     </div>
 </section>
@@ -180,8 +181,6 @@
     </div>
     <br>
 </section>
-
-
 
 <section>
     <div class="row">
@@ -203,48 +202,48 @@
                 </tr>
                 <tr>
                     <td>Bitcoin</td>
-                    <td>54000</td>
-                    <td>55000</td>
+                    <td><span id="bit_buy_price"></span></td>
+                    <td><span id="bit_sell_price"></span></td>
                     <td>
                         <a class="button-table ripple">Trade</a>
                     </td>
                 </tr>
                 <tr>
                     <td>NASDAQ 100</td>
-                    <td>13028</td>
-                    <td>13030</td>
+                    <td><span id="nasdaq_buy_price"></span></td>
+                    <td><span id="nasdaq_sell_price"></span></td>
                     <td>
                         <a class="button-table ripple">Trade</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Tesla</td>
-                    <td>681</td>
-                    <td>683</td>
+                    <td><span id="tesla_buy_price"></span></td>
+                    <td><span id="tesla_sell_price"></span></td>
                     <td>
                         <a class="button-table ripple">Trade</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Litecoin</td>
-                    <td>230</td>
-                    <td>235</td>
+                    <td><span id="lite_buy_price"></span></td>
+                    <td><span id="lite_sell_price"></span></td>
                     <td>
                         <a class="button-table ripple">Trade</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Ethereum</td>
-                    <td>1495</td>
-                    <td>1507</td>
+                    <td><span id="eth_buy_price"></span></td>
+                    <td><span id="eth_sell_price"></span></td>
                     <td>
                         <a class="button-table ripple">Trade</a>
                     </td>
                 </tr>
                 <tr>
                     <td>US 100</td>
-                    <td>1304</td>
-                    <td>1305</td>
+                    <td><span id="us_buy_price"></span></td>
+                    <td><span id="us_sell_price"></span></td>
                     <td>
                         <a class="button-table ripple">Trade</a>
                     </td>
@@ -284,6 +283,41 @@
         </div>
     </div>
 </section>
+
+<div style="width: 70%; padding-left: 15%">
+    <p style="font-size: 18px; text-align: justify">
+        We are not born traders. We become traders. To succeed, we must feel the heights of
+        winning and, occasionally, the depths of loss. The reasons are age-old the way the human
+        brain evolved in a very different world informs our decisions in unexpected ways. So before
+        we can know the intricacies of markets, we must know ourselves: how we make decisions, and
+        how emotion and experience inform our behaviour.
+        <span id="points">...</span>
+        <span style="display: none" id="moreText">
+            We founded Zador.com, a platform with a unique approach to trading, to become a trustworthy
+            environment in which to grow. Our vision is to build the easiest-to-use and most transparent
+            financial platform and wider network possible. We also want to transform the relationship
+            between a trading platform and its customers. To do this we have developed our proprietary
+            feedback system, Emotional Quotient (eQ). This uses artificial intelligence to identify biases
+            and unconscious behaviour, helping traders to train their minds. Zador.com’s platform is fast and
+            fair. Developed for mobile first, immediacy is part of its appeal. While innovation, ease of use
+            and individual support are our biggest concerns, no cost is  spared in making our service engaging and
+            visually appealing. The platform stands out as the most beautiful among its peers it combines an elegant,
+            uncluttered look with an experience and feel that is fluid, easily navigable and great to use.
+            At Zador.com, we believe there should be no barriers to entering financial trading. No
+            matter what their current skill levels, how much they know, the complexity of transactions
+            they choose or how much they can invest, everyone should have the chance to learn how
+            to trade. As traders ourselves with years of experience building online trading mechanisms we
+            wanted a platform that was open, accessible and comprehensive, but also intuitive. None
+            matched our own needs or those of thousands of others, so we built our own. As a result,
+            Zador.com is rooted in the latest technology but features an interface that is easy for
+            novices to find their way around.
+        </span>
+    </p>
+    <button style="font-size: 18px" onclick="expandText()" id="textButton">
+        Show More
+    </button>
+</div>
+
 
 <div style="text-align:center;">
     <p class="label-medium">Our team</p>
