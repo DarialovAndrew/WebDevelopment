@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+
 * {
     box-sizing: border-box;
 }
+
 #login-box {
     position: relative;
     margin: 50px auto;
@@ -14,13 +16,14 @@
     z-index: 2;
     font-family: 'Roboto', sans-serif;
 }
-#togglePsw::before
-{
+
+#togglePsw::before {
     visibility: visible;
     cursor: pointer;
     position: absolute;
     margin-left: 15px;
 }
+
 /*#login-box i {*/
 /*    position: absolute;*/
 /*    padding: 10px;*/
@@ -113,8 +116,6 @@ input[type="submit"]:active {
 }
 
 
-
-
 .right {
     position: absolute;
     top: 0;
@@ -183,6 +184,7 @@ button.social-signin.google {
     display: inline-block;
     margin-bottom: 5px;
 }
+
 .country_selector {
 
     display: block;
@@ -197,6 +199,7 @@ button.social-signin.google {
     font-size: 15px;
 
 }
+
 .form-control input {
     border: 2px solid #8d8a8a;
     border-radius: 4px;
@@ -245,13 +248,15 @@ button.social-signin.google {
     left: 0;
     visibility: hidden;
 }
-.form-control.selector
-{
+
+.form-control.selector {
     padding-bottom: 0;
 }
+
 .form-control.error small {
     visibility: visible;
 }
+
 .sign_up_form button {
     background-color: #8e44ad;
     border: 2px solid #8e44ad;

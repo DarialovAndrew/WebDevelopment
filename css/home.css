@@ -22,6 +22,7 @@ section {
     height: 100%;
     display: table-row;
 }
+
 .row_img {
     justify-content: center;
     flex-wrap: wrap;
@@ -29,7 +30,7 @@ section {
     display: flex;
 }
 
-.crypto-image{
+.crypto-image {
     background-image: url('../img/header.png');
 }
 
@@ -38,12 +39,12 @@ section {
     display: table-cell;
 }
 
-.left{
-    padding-left:10%;
+.left {
+    padding-left: 10%;
 }
 
-.right{
-    text-align:center;
+.right {
+    text-align: center;
     vertical-align: middle;
 }
 
@@ -84,19 +85,19 @@ th {
     font-size: 18px;
 }
 
-.top-label{
+.top-label {
     color: white;
 }
 
-.label-large{
+.label-large {
     font-size: 40px;
 }
 
-.label-medium{
+.label-medium {
     font-size: 32px;
 }
 
-.label-small{
+.label-small {
     font-size: 24px;
 }
 
@@ -111,7 +112,7 @@ th {
     padding: 5px 5px;
 }
 
-.button-top{
+.button-top {
     background-color: #343A40;
     font-size: 18px;
     border-radius: 4px;
@@ -120,7 +121,7 @@ th {
     padding: 15px 30px;
 }
 
-.rainbow:hover{
+.rainbow:hover {
     background-image: linear-gradient(
             to right,
             #E7484F,
@@ -137,16 +138,16 @@ th {
             #732982 100%,
             #E7484F 100%
     );
-    animation:slidebg 3s linear infinite;
+    animation: slidebg 3s linear infinite;
 }
 
-.ripple:hover{
+.ripple:hover {
     background-color: #3b833c;
 }
 
 @keyframes slidebg {
     to {
-        background-position:20vw;
+        background-position: 20vw;
     }
 }
 
@@ -155,43 +156,47 @@ th {
         display: none;
     }
 }
+
 .marquee {
     width: 80px;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-    position:absolute;
-    border:2px solid;
-    padding:5px;
+    position: absolute;
+    border: 2px solid;
+    padding: 5px;
     /*border: 1px dotted #800000;*/
 }
 
 #parent {
-    position:relative;
+    position: relative;
     margin: 0 auto;
-    height:300px;
-    width:800px;
-    padding:0;
+    height: 300px;
+    width: 800px;
+    padding: 0;
 }
 
 .marquee:nth-child(1) {
-    border-color:green;
-    top:0;
-    left:0;
+    border-color: green;
+    top: 0;
+    left: 0;
 }
+
 .marquee:nth-child(2) {
-    border-color:red;
-    top:0;
-    right:0;
+    border-color: red;
+    top: 0;
+    right: 0;
 }
+
 .marquee:nth-child(3) {
-    border-color:yellow;
-    bottom:0;
-    left:0;
+    border-color: yellow;
+    bottom: 0;
+    left: 0;
 }
+
 .marquee:nth-child(4) {
-    border-color:pink;
-    bottom:0;
-    right:0;
+    border-color: pink;
+    bottom: 0;
+    right: 0;
 }
 

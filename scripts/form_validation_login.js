@@ -6,6 +6,7 @@ form.addEventListener('submit', e => {
 
     checkInputs();
 });
+
 function checkInputs() {
     // trim to remove the whitespaces
 

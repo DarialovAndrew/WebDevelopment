@@ -8,16 +8,14 @@ function expandText() {
         showMoreText.style.display = "none";
         points.style.display = "inline";
         buttonText.innerHTML = "Show More";
-    }
-
-    else {
+    } else {
         showMoreText.style.display = "inline";
         points.style.display = "none";
         buttonText.innerHTML = "Show Less";
     }
 }
 
-setInterval(function() {
+setInterval(function () {
     var i = Math.random();
     document.getElementById("doge_price").innerHTML = (0.5 + i * 0.2 - 0.1).toFixed(2);
     document.getElementById("bit_buy_price").innerHTML = (54000 + i * 20 - 10).toFixed(2);
@@ -42,8 +40,10 @@ function animate(classname) {
         setInterval(function () {
             text = text.substring(1) + text[0];
             item.innerHTML = text;
-        }, 125); //интервал прокрутки, мс
+        }, 125);
     }
-
 }
-window.addEventListener('load', function (e) { animate('marquee'); }, false);
+
+window.addEventListener('load', function (e) {
+    animate('marquee');
+}, false);

@@ -21,7 +21,7 @@
     display: block;
     border: none;
     background: none;
-    width:100%;
+    width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
@@ -31,7 +31,6 @@
 .sidenav a:hover, .dropdown-btn:hover {
     color: #fae057;
 }
-
 
 
 /* Add an active class to the active dropdown button */
@@ -49,15 +48,18 @@
     font-weight: 300;
 
 }
-.dropdown-container a{
-    white-space: unset ;
+
+.dropdown-container a {
+    white-space: unset;
 }
+
 /* Optional: Style the caret down icon */
 .fa-caret-down {
     visibility: visible;
     float: right;
     padding-right: 8px;
 }
+
 .openbtn {
     font-weight: 600;
     visibility: hidden;
@@ -71,16 +73,17 @@
     padding: 10px 15px;
     border: none;
 }
+
 .sidenav .closebtn {
     position: relative;
     top: 0;
     left: 150px;
     font-size: 36px;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-.openbtn
-{
-    visibility: visible;
-}
+    .openbtn {
+        visibility: visible;
+    }
 }
 

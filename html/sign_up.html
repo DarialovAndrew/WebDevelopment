@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../css/sign_up.css"/>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/side_nav_header.css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="../css/sign_up.css" rel="stylesheet"/>
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/side_nav_header.css" rel="stylesheet">
     <title>Sign Up Page</title>
 
 </head>
@@ -95,27 +95,27 @@
 <div id="login-box">
     <div class="left">
         <h1>Sign up</h1>
-        <form id="sign_up_form" class="sign_up_form" name="sign_up_form" action="" method="post">
+        <form action="" class="sign_up_form" id="sign_up_form" method="post" name="sign_up_form">
             <div class="form-control">
                 <label for="login">Login</label>
-                <input id="login" type="text" placeholder="Username"/>
+                <input id="login" placeholder="Username" type="text"/>
                 <i class="fa fa-check-circle"></i>
                 <i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="email" >Email</label>
+                <label for="email">Email</label>
                 <input
-                       type="text" placeholder="E-mail" id="email"/>
+                        id="email" placeholder="E-mail" type="text"/>
                 <i class="fa fa-check-circle"></i>
                 <i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="password" >Password</label>
+                <label for="password">Password</label>
 
-                <input id="password" type="password"  placeholder="Password"
-                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+                <input id="password" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                       type="password"/>
                 <i class="fa fa-eye" id="togglePsw" onclick="switch_visibility()"></i>
                 <i class="fa fa-check-circle"></i>
                 <i class="fa fa-exclamation-circle"></i>
@@ -124,17 +124,17 @@
 
             <div class="form-control ">
                 <label for="password2">Password Retype</label>
-                <input  id="password2" type="password"  placeholder="Password"
+                <input id="password2" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase
+      letter, and at least 8 or more characters"
 
-                       title="Must contain at least one number and one uppercase and lowercase
-      letter, and at least 8 or more characters"/>
+                       type="password"/>
                 <i class="fa fa-check-circle"></i>
                 <i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
-<!--            <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>-->
-<!--            <button>Sign me up</button>-->
-            <input type="submit" name="signup_submit" value="Sign me up"/>
+            <!--            <input type="checkbox" name="to_remember" value="true">Remember me for 24 hours <br>-->
+            <!--            <button>Sign me up</button>-->
+            <input name="signup_submit" type="submit" value="Sign me up"/>
         </form>
     </div>
 
@@ -152,14 +152,14 @@
         </button>
     </div>
 
-<!--    <div class="or">OR</div>-->
+    <!--    <div class="or">OR</div>-->
 
 </div>
 <p class="down_part">
     Already have an account? <a class="down_part" href="login.html"><b>Login</b></a>
 </p>
-<div id="sidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<div class="sidenav" id="sidenav">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
     <button class="dropdown-btn">Products
         <i class="fa fa-caret-down"></i>
     </button>
