@@ -7,10 +7,17 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/candle_chart.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/d3_timeseries.min.css"
     <link href="../css/fonts.css" rel="stylesheet"/>
     <link href="../css/dashboard.css" rel="stylesheet">
 </head>
 <body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script type="text/javascript" src="../dist/d3_timeseries.min.js"></script>
+    
 <div class="header">
     <div class="header__left">
         <a href="home.html">
@@ -168,11 +175,12 @@
             </div>
         </div>
         <div class="dashboard__graph">
-            <img alt="Graphic sales" src="../img/graphic1.jpg"/>
+            <div id="chart"></div>
         </div>
 
     </div>
 </div>
 
+<script src="../scripts/candle_chart.js"></script>
 </body>
 </html>
