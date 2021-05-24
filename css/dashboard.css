@@ -171,32 +171,6 @@ img {
     font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-    .dashboard__panel {
-        display: flex;
-        flex: 1 0 auto;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-
-    .tabs {
-        display: flex;
-    }
-
-    .tab__panel {
-        display: flex;
-        justify-content: space-between;
-        width: auto;
-        flex-direction: row;
-        border: 1px solid #f0f0f0;
-    }
-
-    .tab + .tab {
-        margin-top: 5px;
-    }
-}
-
 .dashboard__content {
     width: 100%;
     display: flex;
@@ -265,4 +239,48 @@ td {
 
 .market_row div {
     text-align: center;
+}
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .dashboard__panel {
+        display: block;
+    }
+
+    .tabs {
+        display: flex;
+    }
+
+    .tab__panel {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        flex-direction: row;
+        border: 1px solid #f0f0f0;
+    }
+
+    .tab + .tab {
+        margin-top: 5px;
+    }
+
+    .dashboard__content {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        box-sizing: border-box;
+        /* overflow-y: scroll; */
+        /* flex-direction: column; */
+        border: 8px solid #f0f0f0;
+    }
+
+    .dashboard__graph {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+    }
+
+    #chart {
+        width: 100%;
+        height: fit-content;
+    }
 }
