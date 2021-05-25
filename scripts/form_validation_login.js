@@ -4,29 +4,35 @@ const password = document.getElementById('password');
 form.addEventListener('submit', e => {
     e.preventDefault();
 
-    checkInputs();
+    if (checkInputs()) {
+        window.location.href = "trade.html";
+    }
 });
 
 function checkInputs() {
     // trim to remove the whitespaces
-
+    let error = true;
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
 
     if (emailValue === '') {
         setErrorFor(email, 'Email cannot be blank');
+        error = false
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Not a valid email');
+        error = false
     } else {
         setSuccessFor(email);
     }
 
     if (passwordValue === '') {
+        error = false
         setErrorFor(password, 'Password cannot be blank');
     } else {
         setSuccessFor(password);
     }
+    return error
 
 }
 

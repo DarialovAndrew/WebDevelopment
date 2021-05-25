@@ -132,7 +132,7 @@ ul.top_menu > li.sub_header:hover {
     border: black;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 768px) and (max-width: 1500px) and (-webkit-min-device-pixel-ratio: 1) {
     .top_menu > li.sub_header {
         display: none;
     }
